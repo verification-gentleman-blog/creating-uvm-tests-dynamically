@@ -9,6 +9,11 @@ class test_that_executes_sequence #(type T = uvm_test) extends T;
   endfunction
 
 
+  virtual function string get_type_name();
+    return $sformatf("test_that_executes_%s", seq_wrapper.get_type_name());
+  endfunction
+
+
   virtual task run_phase(uvm_phase phase);
     uvm_sequence seq = create_seq();
     phase.raise_objection(this);
