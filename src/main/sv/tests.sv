@@ -17,5 +17,7 @@ package tests;
 
   `include "test_that_executes_sequence_via_constructor.svh"
   `include "wrapper_for_test_that_executes_some_sequence_using_constructor.svh"
+  `include "wrapper_for_test_that_executes_sequence_using_constructor.svh"
+  `include "tests_that_execute_each_sequence.svh"
 
 endpackage
