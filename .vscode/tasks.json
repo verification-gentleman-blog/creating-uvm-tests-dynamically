@@ -24,7 +24,8 @@
             "id": "testName",
             "description": "name of the test to run",
             "options": [
-              "test_that_executes_some_sequence"
+              "test_that_executes_some_sequence",
+              "test_that_executes_some_other_sequence"
             ]
         }
     ]

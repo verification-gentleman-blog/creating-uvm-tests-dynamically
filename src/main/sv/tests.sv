@@ -5,6 +5,9 @@ package tests;
 
 
   `include "some_sequence.svh"
+  `include "some_other_sequence.svh"
+
   `include "test_that_executes_some_sequence.svh"
+  `include "test_that_executes_some_other_sequence.svh"
 
 endpackage
