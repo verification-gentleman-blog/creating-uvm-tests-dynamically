@@ -1,3 +1,9 @@
 xrun \
+    -uvm \
+    -uvmhome CDNS-1.2 \
+    \
     ../../src/main/sv/*.sv \
-    -incdir ../../src/main/sv
+    -incdir ../../src/main/sv \
+    \
+    -top top \
+    -top tests
