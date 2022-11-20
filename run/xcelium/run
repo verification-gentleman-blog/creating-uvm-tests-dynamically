@@ -15,8 +15,11 @@ xrun \
     -uvm \
     -uvmhome CDNS-1.2 \
     \
-    ../../src/main/sv/*.sv \
-    -incdir ../../src/main/sv \
+    ../../generic-test-builder/src/main/sv/*.sv \
+    -incdir ../../generic-test-builder/src/main/sv \
+    \
+    ../../some-project/src/main/sv/*.sv \
+    -incdir ../../some-project/src/main/sv \
     \
     -top top \
     -top tests \
