@@ -1,4 +1,4 @@
-class test_that_executes_sequence extends uvm_test;
+class test_that_executes_sequence #(type T = uvm_test) extends T;
 
   local const uvm_object_wrapper seq_wrapper;
 

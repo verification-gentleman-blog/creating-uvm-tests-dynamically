@@ -1,6 +1,6 @@
-class test_builder;
+class test_builder #(type T = uvm_test);
 
-  local const wrapper_for_test_that_executes_sequence test_wrapper;
+  local const wrapper_for_test_that_executes_sequence #(T) test_wrapper;
 
 
   local function new(uvm_object_wrapper seq_wrapper);
@@ -8,8 +8,8 @@ class test_builder;
   endfunction
 
 
-  static function test_builder for_sequence_type(uvm_object_wrapper seq_wrapper);
-    test_builder result = new(seq_wrapper);
+  static function test_builder #(T) for_sequence_type(uvm_object_wrapper seq_wrapper);
+    test_builder #(T) result = new(seq_wrapper);
     return result;
   endfunction
 
