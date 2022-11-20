@@ -6,4 +6,6 @@ xrun \
     -incdir ../../src/main/sv \
     \
     -top top \
-    -top tests
+    -top tests \
+    \
+    +UVM_TESTNAME=test_that_executes_some_sequence

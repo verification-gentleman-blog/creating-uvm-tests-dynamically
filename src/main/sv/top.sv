@@ -4,6 +4,6 @@ module top;
 
 
   initial
-    run_test("test_that_executes_some_sequence");
+    run_test();
 
 endmodule
