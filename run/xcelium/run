@@ -1,0 +1,3 @@
+xrun \
+    ../../src/main/sv/*.sv \
+    -incdir ../../src/main/sv
