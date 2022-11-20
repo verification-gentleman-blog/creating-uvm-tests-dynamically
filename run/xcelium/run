@@ -15,11 +15,15 @@ xrun \
     -uvm \
     -uvmhome CDNS-1.2 \
     \
+    -makelib worklib \
     ../../generic-test-builder/src/main/sv/*.sv \
     -incdir ../../generic-test-builder/src/main/sv \
+    -endlib \
     \
+    -makelib worklib \
     ../../some-project/src/main/sv/*.sv \
     -incdir ../../some-project/src/main/sv \
+    -endlib \
     \
     -top top \
     -top tests \
