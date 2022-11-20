@@ -1,6 +1,6 @@
 class test_builder;
 
-  local const wrapper_for_test_that_executes_sequence_using_constructor test_wrapper;
+  local const wrapper_for_test_that_executes_sequence test_wrapper;
 
 
   local function new(uvm_object_wrapper seq_wrapper);
