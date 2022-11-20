@@ -7,6 +7,7 @@
             "label": "run",
             "type": "shell",
             "command": "./run",
+            "args": ["${input:testName}"],
             "options": {
                 "cwd": "run/xcelium"
             },
@@ -15,6 +16,18 @@
                 "kind": "test",
                 "isDefault": true
             }
+        }
+    ],
+    "inputs": [
+        {
+            "type": "pickString",
+            "id": "testName",
+            "description": "name of the test to run",
+            "options": [
+              "test_that_executes_some_sequence",
+              "test_that_executes_some_other_sequence",
+              "test_that_executes_yet_another_sequence"
+            ]
         }
     ]
 }
