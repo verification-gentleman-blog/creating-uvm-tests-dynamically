@@ -10,7 +10,7 @@ class tests_that_execute_each_sequence;
         yet_another_sequence::get_type() };
 
     foreach (seqs[i])
-      void'(test_builder::for_sequence_type(seqs[i]).register());
+      void'(test_builder #(abstract_test)::for_sequence_type(seqs[i]).register());
   endfunction
 
 endclass

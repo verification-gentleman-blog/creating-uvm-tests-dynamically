@@ -1,4 +1,4 @@
-class wrapper_for_test_that_executes_sequence extends uvm_object_wrapper;
+class wrapper_for_test_that_executes_sequence #(type T = uvm_test) extends uvm_object_wrapper;
 
   local const uvm_object_wrapper seq_wrapper;
 
@@ -14,7 +14,7 @@ class wrapper_for_test_that_executes_sequence extends uvm_object_wrapper;
 
 
   virtual function uvm_component create_component(string name, uvm_component parent);
-    test_that_executes_sequence result = new(name, parent, seq_wrapper);
+    test_that_executes_sequence #(T) result = new(name, parent, seq_wrapper);
     return result;
   endfunction
 
