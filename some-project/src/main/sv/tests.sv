@@ -9,6 +9,8 @@ package tests;
   `include "some_other_sequence.svh"
   `include "yet_another_sequence.svh"
 
+  `include "abstract_test.svh"
+
   `include "tests_that_execute_each_sequence.svh"
 
 endpackage
