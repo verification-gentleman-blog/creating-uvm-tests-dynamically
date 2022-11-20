@@ -1,0 +1,10 @@
+*.log
+
+# DVT
+/.dvt/*.ls
+/.dvt/*.build.auto.*
+/.dvt/build.config.xml
+
+# Xcelium
+xcelium.d/
+xrun.history
