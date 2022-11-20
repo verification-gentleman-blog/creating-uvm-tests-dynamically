@@ -1,9 +1,14 @@
+#!/bin/env bash
+
+set -e
+
+
 if [[ $# -eq 0 ]] ; then
     echo 'ERROR: Expected test name'
     exit 1
 fi
 
-test = $1
+test=$1
 
 
 xrun \
@@ -16,4 +21,4 @@ xrun \
     -top top \
     -top tests \
     \
-    +UVM_TESTNAME=$1
+    +UVM_TESTNAME=$test
