@@ -1,3 +1,11 @@
+if [[ $# -eq 0 ]] ; then
+    echo 'ERROR: Expected test name'
+    exit 1
+fi
+
+test = $1
+
+
 xrun \
     -uvm \
     -uvmhome CDNS-1.2 \
@@ -8,4 +16,4 @@ xrun \
     -top top \
     -top tests \
     \
-    +UVM_TESTNAME=test_that_executes_some_sequence
+    +UVM_TESTNAME=$1
