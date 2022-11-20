@@ -8,10 +8,6 @@ package tests;
   `include "some_other_sequence.svh"
   `include "yet_another_sequence.svh"
 
-  `include "test_that_executes_some_sequence.svh"
-  `include "test_that_executes_some_other_sequence.svh"
-  `include "test_that_executes_yet_another_sequence.svh"
-
   `include "test_that_executes_sequence_via_constructor.svh"
   `include "wrapper_for_test_that_executes_sequence_using_constructor.svh"
   `include "test_builder.svh"
