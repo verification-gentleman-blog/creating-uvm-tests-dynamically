@@ -1,4 +1,4 @@
-class test_that_executes_sequence #(type SEQ = int) extends uvm_test;
+class test_that_executes_sequence_via_param #(type SEQ = int) extends uvm_test;
 
   function new(string name, uvm_component parent);
     super.new(name, parent);
@@ -13,6 +13,6 @@ class test_that_executes_sequence #(type SEQ = int) extends uvm_test;
   endtask
 
 
-  `uvm_component_param_utils(test_that_executes_sequence #(SEQ))
+  `uvm_component_param_utils(test_that_executes_sequence_via_param #(SEQ))
 
 endclass
